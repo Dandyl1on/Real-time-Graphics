@@ -4,7 +4,7 @@ public class CreateGrid : MonoBehaviour
 {
     public Transform prefab;
 
-    public int gridResolution = 10;
+    public int gridResolution = 5;
 
     public Transform[] grid;
 
