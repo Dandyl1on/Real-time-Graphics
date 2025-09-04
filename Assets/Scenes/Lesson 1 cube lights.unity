@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 410087040}
   - component: {fileID: 410087042}
   m_Layer: 0
-  m_Name: Directional Light
+  m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -443,6 +443,9 @@ GameObject:
   - component: {fileID: 1869925673}
   - component: {fileID: 1869925674}
   - component: {fileID: 1869925675}
+  - component: {fileID: 1869925676}
+  - component: {fileID: 1869925677}
+  - component: {fileID: 1869925678}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -493,13 +496,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 039969760ca7dbe469355836c709c83a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Transformations
-  moveFrequency: 2
-  moveAmplitude: 5
+  moveFrequency: 1.94
+  moveAmplitude: 1.72
   moveOffset: 0
-  scaleFrequency: 2
-  scaleAmplitude: 5
-  scaleOffset: 0
+  scaleFrequency: 0.5
+  scaleAmplitude: 2
+  scaleOffset: 1.09
   rotationSpeed: 1
+--- !u!114 &1869925676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869925672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ee9493a650b43148bc86cb6df08946f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraControl
+  distance: 10
+  orbitSpeed: 2
+--- !u!114 &1869925677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869925672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f6cec2c8876b5545a6e768fcf2577b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LightManipulation
+  pointLight: {fileID: 410087039}
+  amplitude: 5
+  frequency: 1
+  maxDistance: 5
+  verticalAmplitude: 2
+--- !u!114 &1869925678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869925672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bba4de2a3afe4f408f83cd36b2ea2de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RayCastManipulator
+  numRaycasts: 10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
