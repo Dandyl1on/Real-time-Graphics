@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Transformations : MonoBehaviour
 {
-    CreateGrid createGrid;
+     CreateGrid createGrid;
 
         Vector3[] startPos;
 
