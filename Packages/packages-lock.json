@@ -135,6 +135,15 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.unity.postprocessing": {
+      "version": "3.5.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.physics": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.probuilder": {
       "version": "6.0.7",
       "depth": 0,
@@ -308,6 +317,23 @@
         "com.unity.modules.xr": "1.0.0"
       },
       "url": "https://packages.unity.com"
+    },
+    "jp.keijiro.noiseshader": {
+      "version": "3.0.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://registry.npmjs.com"
+    },
+    "jp.keijiro.shadergraphassets": {
+      "version": "2.5.3",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.shadergraph": "12.1.0",
+        "jp.keijiro.noiseshader": "3.0.1"
+      },
+      "url": "https://registry.npmjs.com"
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
